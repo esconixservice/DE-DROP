@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10110f" />
+  <meta name="description" content="A study in presence. Discover Nocturne, an imagined signature fragrance." />
+  <title>Nocturne — The Art of Presence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader__mark">N</div>
+    <p>PREPARING THE EXPERIENCE</p>
+    <div class="loader__track"><span id="load-progress"></span></div>
+    <span class="loader__count" id="load-count">0%</span>
+  </div>
+  <header class="nav" id="top">
+    <a class="wordmark" href="#top" aria-label="Nocturne home"><span class="wordmark__seal">N</span><span>NOCTURNE</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
+    <nav class="nav__links" aria-label="Main navigation">
+      <a href="#collection">Collection</a><a href="#story">Our story</a><a href="#fragrance">Fragrance</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav__discover" href="#fragrance">Discover <span>↗</span></a>
+  </header>
+  <main>
+    <section class="hero" id="collection" aria-label="Cinematic fragrance story">
+      <canvas id="sequence" aria-label="A cinematic journey from the city into an intimate fragrance moment"></canvas>
+      <div class="hero__shade"></div>
+      <div class="hero__copy"><p class="eyebrow"><span></span> A NOCTURNE STUDY · Nº 01</p><h1>The art<br />of <em>presence.</em></h1><p class="hero__sub">An impression that stays<br />beyond the moment.</p></div>
+      <div class="hero__bottom"><span>PARIS · NEW YORK · EVERYWHERE</span><span class="scroll-cue"><i></i> SCROLL TO DISCOVER</span><span id="frame-index">001 / 240</span></div>
+      <img class="hero__fallback" src="/public/frames/ezgif-frame-001.jpg" alt="A city at dusk, the opening view of the Nocturne fragrance film" />
+    </section>
+    <section class="intro section-pad" id="story">
+      <p class="eyebrow reveal">A QUIETER KIND OF ARRIVAL</p>
+      <h2 class="reveal">More than<br />a <em>fragrance.</em></h2>
+      <div class="intro__rule"></div>
+      <p class="intro__copy reveal">An expression of individuality.<br />A signature that speaks before you do.</p>
+      <span class="section-index">01 — 04</span>
+    </section>
+    <section class="product section-pad" id="fragrance">
+      <div class="product__visual reveal">
+        <div class="halo"></div>
+        <div class="bottle" role="img" aria-label="Illustrated placeholder bottle for Nocturne fragrance">
+          <div class="bottle__cap"></div><div class="bottle__neck"></div><div class="bottle__body"><div class="bottle__label"><span>NOCTURNE</span><small>EAU DE PARFUM</small><b>01</b><small>PARIS</small></div></div>
+        </div>
+        <span class="product__caption">OBJECT Nº 01 &nbsp;·&nbsp; 2025</span>
+      </div>
+      <div class="product__text reveal">
+        <p class="eyebrow">THE SIGNATURE</p><p class="product__number">01 / 03</p>
+        <h2>After<br /><em>hours.</em></h2>
+        <p class="product__description">A meeting of luminous bergamot, quiet woods and the warmth of skin. Made for the moments that become memories.</p>
+        <div class="product__details"><span>EAU DE PARFUM</span><span>75 ML / 2.5 FL.OZ.</span><span>$185</span></div>
+        <a class="text-link" href="#notes">Discover the fragrance <span>↗</span></a>
+        <p class="placeholder-note">A considered study in scent. Product details are illustrative placeholders.</p>
+      </div>
+    </section>
+    <section class="notes section-pad" id="notes">
+      <div class="notes__heading reveal"><p class="eyebrow">THE COMPOSITION</p><h2>A lasting<br /><em>impression.</em></h2></div>
+      <div class="notes__list">
+        <article class="note reveal"><span>01</span><div><small>TOP NOTES</small><h3>Bergamot · Pink pepper</h3></div><b>↗</b></article>
+        <article class="note reveal"><span>02</span><div><small>HEART NOTES</small><h3>Violet leaf · Iris</h3></div><b>↗</b></article>
+        <article class="note reveal"><span>03</span><div><small>BASE NOTES</small><h3>Vetiver · Skin musk</h3></div><b>↗</b></article>
+      </div><span class="section-index">02 — 04</span>
+    </section>
+    <section class="manifesto section-pad">
+      <p class="eyebrow reveal">A NOTE ON PRESENCE</p>
+      <h2 class="reveal">You are remembered<br />by what you <em>leave behind.</em></h2>
+      <p class="manifesto__foot reveal">Quiet confidence. Unmistakably yours.</p><span class="section-index">03 — 04</span>
+    </section>
+    <section class="cta section-pad" id="contact">
+      <p class="eyebrow reveal">THE NOCTURNE COLLECTION</p><h2 class="reveal">Leave your<br /><em>signature.</em></h2>
+      <p class="reveal">Discover a fragrance that becomes part of your identity.</p>
+      <a class="button reveal" href="#fragrance">Discover the collection <span>↗</span></a>
+      <span class="section-index">04 — 04</span>
+    </section>
+  </main>
+  <footer class="footer"><a class="wordmark" href="#top"><span class="wordmark__seal">N</span><span>NOCTURNE</span></a><span>AN IMAGINED HOUSE OF FRAGRANCE</span><span>© 2025 NOCTURNE</span><a href="#top">BACK TO THE TOP ↑</a></footer>
+</body>
+</html>
