@@ -1,7 +1,7 @@
 (() => {
   document.body.classList.add('has-js');
   const total = 240;
-  const frameUrl = (n) => `/public/frames/ezgif-frame-${String(n).padStart(3, '0')}.jpg`;
+  const frameUrl = (n) => `./public/frames/ezgif-frame-${String(n).padStart(3, '0')}.jpg`;
   const canvas = document.querySelector('#sequence');
   const context = canvas.getContext('2d', { alpha: false, desynchronized: true });
   const loader = document.querySelector('#loader');
